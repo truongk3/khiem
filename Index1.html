@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Saigon Cinema</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style1.css">
+        <link rel="shortcut icon" href="Images/icon web.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="js/jquery-3.6.0.min/js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="modal js-modal">
+                <div class="modal-container js-modal-container">
+                    <div class="modal-close js-modal-close"><i class='fa fa-close'></i></div>
+                    <header class="modal-header">
+                        Login in to SaiGon Cinema
+                    </header>
+                    <div class="modal-body">
+                        <form class="form-login">
+                            <div class="form-text">
+                                <input type="text" placeholder="Username" id="username">
+                            </div>
+                            <div class="form-text">
+                                <input type="password" placeholder="Password" id="password">
+                            </div>
+                        </form>
+                    </div>
+                    <button class="loginbutton" id="submit">Đăng nhập</button>
+                    <div><span>Bạn chưa có tài khoản? Đăng ký <a href="#">Tại đây</a></span></div>
+                </div>
+            </div>
+
+            <div class="navbar flex animate__animated animate__slideInDown">
+                <div class="logo">
+                     <a href="Index1.html"><img src="Images/Logo.png" alt="logo"></a>
+                </div>
+                <ul class="nav flex">
+                    <li>Phim <i class="fa-solid fa-angle-down"></i>
+                        <ul class="subnav">
+                            <li><a href="#">Phim Sắp Chiếu</a></li>
+                            <li><a href="Index1.html">Phim Đang Chiếu</a></li>
+                        </ul>
+                    </li>
+                    <li>Rạp Phim <i class="fa-solid fa-angle-down"></i>
+                        <ul class="subnav">
+                            <li><a href="#">Tất Cả Các Rạp</a></li>
+                            <li><a href="#">Rạp Đặt Biệt</a></li>
+                            <li><a href="#">Rạp Sắp Mở</a></li>
+                        </ul>
+                    </li>
+                    <li>Thành Viên <i class="fa-solid fa-angle-down"></i>
+                        <ul class="subnav">
+                            <li><a href="Index4.html" class="hover" >Quyền Lợi</a></li>
+                        </ul>
+                    </li>
+                    <button id="login1" class="js-buy-ticket">Đăng nhập</button>
+                </ul>
+            </div>
+        </header>
+        <!-- PLAYING-MOVIE -->
+        <div class="content-first">
+            <h1 class="container">ĐANG CHIẾU TẠI <b class="SG-CNM" style="color: #ff8e00;"> SAIGON CINEMA </b></h1>
+            <section class="ims container h-space">
+                <div class="im">
+                    <div class="description">
+                           <a href="Index2.1.html">
+                                <img src="https://atom-tickets-res.cloudinary.com/image/upload/c_scale,f_auto,h_240,q_auto,w_160/v1654527122/ingestion-images-archive-prod/archive/1654527122120_240914_cops_0.jpg" alt="Minions">
+                                <div class="accordian-header">
+                                    <h3><a href="Index2.1.html" class="mouse" ><span>MINIONS: SỰ TRỖI DẬY CỦA GRU</span></a></h3>
+                                </div>
+                           </a>
+                        <ul class="accordion-body">
+                            <li><b>Thể loại:</b> Hài, Hoạt Hình, Phiêu Lưu</li>
+                            <li><b>Thời lượng:</b> 88 phút</li>
+                            <li><b>Khởi chiếu:</b> 01-07-2022</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="im">
+                    <div class="description">
+                           <a href="Index2.2.html">
+                                <img src="https://atom-tickets-res.cloudinary.com/image/upload/c_scale,f_auto,h_240,q_auto,w_160/v1/ingestion-images-archive-prod/gracenote/assets/p21263003_p_v8_ab.jpg" alt="Nope">
+                                <div class="accordian-header">
+                                    <h3><a href="Index2.2.html" class="mouse" ><span>KHÔNG</span></a></h3>
+                                </div>
+                           </a>
+                        <ul class="accordion-body">
+                            <li><b>Thể loại:</b> Hồi hộp, Kinh Dị</li>
+                            <li><b>Thời lượng:</b> 106 phút</li>
+                            <li><b>Khởi chiếu:</b> 26-08-2022</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="im">
+                    <div class="description">
+                          <a href="Index2.3.html">
+                                <img src="https://atom-tickets-res.cloudinary.com/image/upload/c_scale,f_auto,h_240,q_auto,w_160/v1651590721/ingestion-images-archive-prod/archive/1651590720759_253705_cops_0.jpg" alt="Phi công siêu đẳng Maverick">
+                                <div class="accordian-header">
+                                    <h3><a href="Index2.3.html" class="mouse" ><span>PHI CÔNG SIÊU ĐẲNG MARVERICK</span></a></h3>
+                                </div>
+                          </a>
+                        <ul class="accordion-body">
+                            <li><b>Thể loại:</b> Hành Động, Phiêu Lưu</li>
+                            <li><b>Thời lượng:</b> 130 phút</li>
+                            <li><b>Khởi chiếu:</b> 27-05-2022</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="im">
+                    <div class="description">
+                          <a href="Index2.4.html">
+                                <img src="https://atom-tickets-res.cloudinary.com/image/upload/c_scale,f_auto,h_240,q_auto,w_160/v1653360275/ingestion-images-archive-prod/archive/1653360275275_296302_cops_0.jpg" alt="Thor">
+                                <div class="accordian-header">
+                                    <h3><a href="Index2.4.html" class="mouse" ><span>THOR: TÌNH YÊU VÀ SẤM SÉT</span></a></h3>
+                                </div>
+                          </a>
+                        <ul class="accordion-body">
+                            <li><b>Thể loại:</b> Hành Động, Phiêu Lưu, Thần Thoại</li>
+                            <li><b>Thời lượng:</b> 118 phút</li>
+                            <li><b>Khởi chiếu:</b> 08-07-2022</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="im">
+                    <div class="description">
+                            <a href="Index2.5.html">
+                                <img src="https://atom-tickets-res.cloudinary.com/image/upload/c_scale,f_auto,h_240,q_auto,w_160/v1640021617/ingestion-images-archive-prod/archive/1640021617529_318286_cops_0.jpg" alt="The black phone">
+                                <div class="accordian-header">
+                                    <h3><a href="Index2.5.html" class="mouse" ><span>ĐIỆN THOẠI ĐEN</span></a></h3>
+                                </div>
+                            </a>
+                        <ul class="accordion-body">
+                            <li><b>Thể loại:</b> Hành Động, Kinh Dị</li>
+                            <li><b>Thời lượng:</b> 103 phút</li>
+                            <li><b>Khởi chiếu:</b> 24-06-2022</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- TODAY-MOVIE -->
+        <div class="content-second">
+            <h1 class="container">ĐANG CHIẾU HÔM NAY <i style="color: #ff8e00; font-size: 50px;" class="fa-solid fa-film"></i></h1>
+            <h4 class="container">24/08/2022</h4>
+            <div class="movies container">
+              <div class="movie flex">
+                   <a href="Index2.1.html">
+                        <div class="img">
+                            <img src="https://atom-tickets-res.cloudinary.com/image/upload/c_scale,f_auto,h_240,q_auto,w_160/v1654527122/ingestion-images-archive-prod/archive/1654527122120_240914_cops_0.jpg" alt="Minions">
+                        </div>
+                   </a>
+                    <div class="desc">
+                            <h3>MINIONS: SỰ TRỖI DẬY CỦA GRU</h3>
+                            <h4 class="director">Kyle Balda</h4>
+                            <h4>Rất lâu trước khi trở thành một phản diện chuyên nghiệp, Gru chỉ là một cậu bé 12 tuổi sống ở vùng ngoại ô
+                               vào những năm 1970, với ước mơ một ngày sẽ làm “bá chủ” thế giới. Và 3 “quả chuối” vàng biết đi từ trên trời
+                               rơi xuống đã là những đồng đội đầu tiên của Gru, bên cạnh ủng hộ cậu bé, cùng nhau thiết kế những vũ khí đầu
+                               tiên, thực hiện những phi vụ đầu tiên.</h4>
+                    </div>
+                    <div class="hours">
+                        <h3>GIỜ CHIẾU</h3>
+                        <div class="hour flex">
+                        <h5><a href="Index2.1.html">11 : 30</a></h5>
+                        <h5>13 : 25</h5>
+                        <h5>16 : 00</h5>
+                       </div>
+                       <div class="hour flex">
+                        <h5>19 : 45</h5>
+                        <h5>21 : 30</h5>
+                        <h5>23 : 10</h5>
+                       </div>
+                    </div>
+              </div>
+              <div class="movie flex">
+                  <a href="Index2.2.html">
+                        <div class="img">
+                            <img src="https://atom-tickets-res.cloudinary.com/image/upload/c_scale,f_auto,h_240,q_auto,w_160/v1/ingestion-images-archive-prod/gracenote/assets/p21263003_p_v8_ab.jpg" alt="Nope">
+                        </div>
+                  </a>
+                    <div class="desc">
+                            <h3>KHÔNG</h3>
+                            <h4 class="director"> Jordan Peele</h4>
+                            <h4>Câu chuyện xoay quanh đôi vợ chồng sở hữu chuồng ngựa và một trang trại mang tên Haywood tại California.
+                                Cùng với những cư dân của thị trấn biệt lập này, bộ đôi đã chứng kiến một sự kiện siêu nhiên bí ẩn và bất thường,
+                                đến từ đám mây lớn, lơ lửng trên bầu trời.</h4>
+                    </div>
+                    <div class="hours">
+                        <h3>GIỜ CHIẾU</h3>
+                       <div class="hour flex">
+                        <h5><a href="Index2.2.html">11 : 30</a></h5>
+                        <h5>13 : 25</h5>
+                        <h5>16 : 00</h5>
+                       </div>
+                       <div class="hour flex">
+                        <h5>19 : 45</h5>
+                        <h5>21 : 30</h5>
+                        <h5>23 : 10</h5>
+                       </div>
+                    </div>
+              </div>
+              <div class="movie flex">
+                  <a href="Index2.3.html">
+                        <div class="img">
+                            <img src="https://atom-tickets-res.cloudinary.com/image/upload/c_scale,f_auto,h_240,q_auto,w_160/v1651590721/ingestion-images-archive-prod/archive/1651590720759_253705_cops_0.jpg" alt="Phi công siêu đẳng Maverick">
+                        </div>
+                  </a>
+                    <div class="desc">
+                            <h3>PHI CÔNG SIÊU ĐẲNG MARVERICK</h3>
+                            <h4 class="director">Joseph Kosinski</h4>
+                            <h4>Sau hơn ba mươi năm phục vụ, Pete “Maverick” Mitchell từng nổi danh là một phi công thử nghiệm
+                                quả cảm hàng đầu của Hải quân, né tránh cơ hội thăng chức, điều khiến anh cảm thấy bị bó buộc,
+                                để trở về làm chính mình.</h4>
+                    </div>
+                    <div class="hours">
+                        <h3>GIỜ CHIẾU</h3>
+                       <div class="hour flex">
+                        <h5><a href="Index2.3.html">11 : 30</a></h5>
+                        <h5>13 : 25</h5>
+                        <h5>16 : 00</h5>
+                       </div>
+                       <div class="hour flex">
+                        <h5>19 : 45</h5>
+                        <h5>21 : 30</h5>
+                        <h5>23 : 10</h5>
+                       </div>
+                    </div>
+              </div>
+              <div class="movie flex">
+                   <a href="Index2.4.html">
+                        <div class="img">
+                            <img src="https://atom-tickets-res.cloudinary.com/image/upload/c_scale,f_auto,h_240,q_auto,w_160/v1653360275/ingestion-images-archive-prod/archive/1653360275275_296302_cops_0.jpg" alt="Thor">
+                        </div>
+                   </a>
+                    <div class="desc">
+                            <h3>THOR: TÌNH YÊU VÀ SẤM SÉT</h3>
+                            <h4 class="director">Taika Waititi</h4>
+                            <h4>Vốn từng là một chiến binh hùng mạnh của Asgard, trải qua vô số trận chiến lớn nhỏ nhưng sau sự kiện trong Avengers:
+                                Endgame (2019) cùng vô số mất mát, Thần Sấm không còn muốn theo đuổi con đường siêu anh hùng. Từ đây, anh lên đường
+                                tìm ra ý nghĩa của cuộc sống và nhìn nhận lại bản thân mình.</h4>
+                    </div>
+                    <div class="hours">
+                        <h3>GIỜ CHIẾU</h3>
+                       <div class="hour flex">
+                        <h5><a href="Index2.4.html">11 : 30</a></h5>
+                        <h5>13 : 25</h5>
+                        <h5>16 : 00</h5>
+                       </div>
+                       <div class="hour flex">
+                        <h5>19 : 45</h5>
+                        <h5>21 : 30</h5>
+                        <h5>23 : 10</h5>
+                       </div>
+                    </div>
+              </div>
+              <div class="movie flex">
+                   <a href="Index2.5.html">
+                        <div class="img">
+                            <img src="https://atom-tickets-res.cloudinary.com/image/upload/c_scale,f_auto,h_240,q_auto,w_160/v1640021617/ingestion-images-archive-prod/archive/1640021617529_318286_cops_0.jpg" alt="The black phone">
+                        </div>
+                   </a>
+                    <div class="desc">
+                            <h3>ĐIỆN THOẠI ĐEN</h3>
+                            <h4 class="director">Scott Derrickson</h4>
+                            <h4>Sau khi bị bắt cóc bởi một kẻ giết trẻ em và nhốt trong một tầng hầm cách âm, một cậu bé 13 tuổi bắt đầu nhận
+                                được các cuộc gọi trên một chiếc điện thoại bị ngắt kết nối từ…</h4>
+                    </div>
+                    <div class="hours">
+                       <h3>GIỜ CHIẾU</h3>
+                       <div class="hour flex">
+                            <h5><a href="Index2.5.html">11 : 30</a></h5>
+                            <h5>13 : 25</h5>
+                            <h5>16 : 00</h5>
+                       </div>
+                       <div class="hour flex">
+                            <h5>19 : 45</h5>
+                            <h5>21 : 30</h5>
+                            <h5>23 : 10</h5>
+                       </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <footer>
+           <div class="container flex footer">
+                <div class="contact">
+                    <h1>SAIGON CINEMA</h1>
+                    <h4>Tầng 10, Landmark 81 - số 208 Nguyễn Hữu Cảnh, P.22, Q.Bình Thạnh, TP.HCM, VIỆT NAM</h4>
+                </div>
+                <div class="movie2">
+                    <h2>PHIM</h2>
+                    <h3><a href="">Phim sắp chiếu</a></h3>
+                    <h3><a href="">Phim đang chiếu</a></h3>
+                </div>
+                <div class="info">
+                    <h2>THÔNG TIN</h2>
+                    <h3><a href="">Về chúng tôi</a></h3>
+                    <h3><a href="">Bài viết</a></h3>
+                    <h3><a href="">Liên hệ</a></h3>
+                    <h3><a href="">Trợ giúp</a></h3>
+                </div>
+                <div class="follow">
+                    <h2>THEO DÕI CHÚNG TÔI</h2>
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-facebook icon-contact"></i>
+                        <i class="fa-brands fa-instagram icon-contact"></i>
+                        <i class="fa-brands fa-twitter icon-contact"></i>
+                        <i class="fa-brands fa-google icon-contact"></i>
+                    </div>
+            </div>
+        </footer>
+        <div class="copyright"><p>&copy; 2022 SAIGON CINEMA | All Rights Reserved</p></div>
+        <script src="JS3.js"></script>
+    </body>
+</html>

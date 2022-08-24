@@ -1,0 +1,397 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.h-space {
+  justify-content: space-between;
+}
+.navbar {
+  justify-content: center;
+  height: 4rem;
+  align-items: center;
+  box-shadow: 5px 5px 5px gray;
+}
+.navbar .logo img {
+  height: 48px;
+  margin: 0px 10px 0px 0px;
+}
+.navbar ul {
+  list-style-type: none;
+}
+.navbar > ul > li {
+  margin-right: 5px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar ul li:hover {
+  background-color: #ff8e00;
+  color: white;
+}
+.subnav {
+  position: absolute;
+  top: 48px;
+  left: 0px;
+}
+.subnav li {
+  color: black;
+  width: 200px;
+  background-color: #ff8e00;
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: none;
+  border-top: 1px solid white;
+}
+.subnav li a {
+  text-decoration: none;
+  color: black;
+}
+.navbar li:hover .subnav li {
+  display: block;
+}
+.navbar .subnav li:hover a {
+  color: white;
+}
+.content-first {
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.content-first .section1 img {
+  width: 120%;
+  height: 100%;
+}
+.section1 {
+  width: 30%;
+}
+.section2 {
+  margin-left: 50px;
+  width: 60%;
+}
+.section2 span {
+  font-weight: 200;
+}
+.section2 > h1 {
+  margin-bottom: 8px;
+}
+.section2 > h1:hover {
+  transition: all 0.3s ease-in-out;
+  color: #ff8e00;
+  cursor: pointer;
+}
+.section2 > h2 {
+  color: red;
+  margin-bottom: -25px;
+}
+.section2 > h3 {
+  margin-bottom: 8px;
+}
+.section2 ul {
+  list-style-type: none;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.section2 ul li {
+  margin-top: 40px;
+  margin-right: 10px;
+}
+.section2 ul a {
+  padding: 1rem 1.5rem;
+  background-color: #838080;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.section2 ul a:hover {
+  background-color: #9e9b9f;
+}
+.infor {
+  margin-top: 50px;
+}
+.infor h1 {
+  margin-bottom: 10px;
+}
+.infor .descrip h3 {
+  font-weight: 200;
+  color: #818181;
+  margin-right: 40px;
+}
+.infor > p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: #707070;
+}
+.cmt {
+  margin-top: 50px;
+  height: 295px;
+  position: relative;
+}
+.cmt1 {
+  justify-content: space-between;
+}
+.cmt1 {
+  margin-top: 20px;
+}
+.cmt1 input {
+  padding-left: 20px;
+  width: 48%;
+  height: 50px;
+  background-color: #908e91;
+  border: 2px solid #908e91;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+}
+.cmt2 {
+  margin-top: 20px;
+}
+.cmt2 input {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 100px 20px;
+  width: 100%;
+  background-color: #908e91;
+  border: 2px solid #908e91;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+}
+input::placeholder {
+  color: white;
+}
+.send h3 a {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  color: white !important;
+  background-color: #eb8100;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #363236;
+  width: 100%;
+  height: 250px;
+  color: white;
+  margin-top: 100px;
+}
+footer h3 a:visited {
+  color: #b4b4b4;
+}
+.footer {
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #b4b4b4;
+}
+.footer h2 {
+  margin-bottom: 10px;
+}
+.footer h3 {
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+.footer h3 a:hover {
+  color: #f1f1f1;
+}
+.footer h4 {
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+.footer h4:hover {
+  color: #f1f1f1;
+}
+.contact {
+  width: 20%;
+  margin-top: 42px;
+}
+.contact h1 {
+  margin-bottom: 10px;
+}
+.info {
+  width: 20%;
+  margin-top: 50px;
+}
+.follow {
+  width: 20%;
+  margin-top: 50px;
+}
+.movie2 {
+  width: 20%;
+  margin-top: 50px;
+}
+.icon-contact {
+  font-size: 30px;
+  color: #ff8e00;
+  margin-right: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+div.copyright {
+  text-align: center;
+  background-color: #363236;
+  color: #b4b4b4;
+  height: 30px;
+  line-height: 30px;
+}
+/* Tablet: 740px <= width <= 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .container {
+    width: 90%;
+  }
+  .navbar {
+    margin-top: 0;
+  }
+  .section1 {
+    width: 40%;
+  }
+  .section2 {
+    width: 48%;
+  }
+  .content-first .section1 img {
+    width: 125%;
+    height: 102%;
+  }
+  .contact h1 {
+    font-size: 25px;
+  }
+  .footer h4 {
+    font-size: 13px;
+  }
+  .footer h3 {
+    font-size: 17px;
+  }
+  .footer h2 {
+    font-size: 20px;
+  }
+  footer {
+    margin-top: 60px;
+  }
+  .icon-contact {
+    font-size: 19px;
+  }
+}
+/* Mobile: width < 740px */
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 90%;
+  }
+  .navbar {
+    height: 48px;
+    margin-top: 0;
+  }
+  .navbar ul.flex {
+    margin-top: 0;
+  }
+  .navbar ul li {
+    font-size: 8px;
+  }
+  .navbar .logo img {
+    height: 18px;
+    line-height: 18px;
+  }
+  i.fa-angle-down {
+    display: none;
+  }
+  .content-first {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .content-first .section1 img {
+    width: 333%;
+  }
+  .content-first .section2 {
+    width: 100%;
+    margin-left: 0;
+  }
+  .content-first .section2 > h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .content-first .section2 > h3 {
+    font-size: 14px;
+  }
+  ul.flex {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .infor {
+    margin: 40px 5%;
+    width: 90%;
+    margin-right: 0;
+  }
+  .infor h1 {
+    font-size: 20px;
+  }
+  .infor h3 {
+    margin-right: 0;
+    font-size: 12px;
+  }
+  .infor > p {
+    font-size: 20px;
+  }
+  .infor .descrip {
+    width: 100%;
+    height: 111px;
+    overflow: scroll;
+  }
+  iframe {
+    width: 100%;
+    height: 300%;
+  }
+  .cmt {
+    margin-top: -18px;
+    height: 270px;
+  }
+  .cmt h1 {
+    font-size: 20px;
+  }
+  .cmt1 input {
+    font-size: 12px;
+  }
+  .cmt2 input {
+    font-size: 12px;
+  }
+  .send h3 a {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+  .contact h1 {
+    font-size: 13px;
+    margin-top: -24px;
+  }
+  footer {
+    margin-top: -20px;
+    height: 160px;
+  }
+  .footer h2 {
+    font-size: 13px;
+    margin-top: -18px;
+  }
+  .footer h3 {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .footer h4 {
+    font-size: 10px;
+  }
+  .icon-contact {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  div.copyright p {
+    font-size: 10px;
+  }
+}

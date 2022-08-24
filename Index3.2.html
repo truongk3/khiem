@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Saigon Cinema</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style3.css">
+        <link rel="shortcut icon" href="Images/icon web.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <script src="js/jquery-3.6.0.min/js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="navbar flex">
+                <div class="logo">
+                     <a href="Index1.html"><img src="Images/Logo.png" alt="logo"></a>
+                </div>
+                <ul class="nav flex">
+                    <li>Phim <i class="fa-solid fa-angle-down"></i>
+                        <ul class="subnav">
+                            <li><a href="#">Phim Sắp Chiếu</a></li>
+                            <li><a href="Index1.html">Phim Đang Chiếu</a></li>
+                        </ul>
+                    </li>
+                    <li>Rạp Phim <i class="fa-solid fa-angle-down"></i>
+                        <ul class="subnav">
+                            <li><a href="#">Tất Cả Các Rạp</a></li>
+                            <li><a href="#">Rạp Đặt Biệt</a></li>
+                            <li><a href="#">Rạp Sắp Mở</a></li>
+                        </ul>
+                    </li>
+                    <li>Thành Viên <i class="fa-solid fa-angle-down"></i>
+                        <ul class="subnav">
+                            <li><a href="Index4.html" class="hover" >Quyền Lợi</a></li>
+                        </ul>
+                    </li>
+                    <li>Đăng Nhập</li>
+                </ul>
+            </div>
+        </header>
+       <div class="content">
+            <div class="cart container">
+                <h1>GIỎ HÀNG <i style="color: #ff8e00;" class="fa-solid fa-cart-shopping"></i></h1>
+                <table>
+                    <tr class="tr1">
+                        
+                        <td><b>Ảnh</b></td>
+                        <td><b>Tên phim</b></td>
+                        <td><b>Giá vé</b></td>
+                        <td><b>Giờ chiếu</b></td>
+                        <td><b>Số lượng</b></td>
+                        <td style="width:20%;"><b>Tổng tiền</b></td>
+                    </tr>
+                    <tr class="tr2">
+                        <td><img src="https://atom-tickets-res.cloudinary.com/image/upload/c_scale,f_auto,h_240,q_auto,w_160/v1/ingestion-images-archive-prod/gracenote/assets/p21263003_p_v8_ab.jpg" alt="Nope"></td>
+                        <td>NOPE</td>
+                        <td>55,000 VND</td>
+                        <label for="qty" id="pro" data-price="55000"></label>
+                        <td>Lúc 11:30 ngày 24/08/2022</td>
+                        <!-- <td><input style="width:20%; height:20%;font-size:15px;" type="number" id="qty"> <button type="button" onclick="calculate()">OK</button></td> -->
+                        <td><input value="1" min="1" max="20" type="number" id="qty" onchange="calculate()"></td>
+                        <td id="amount">55000 VND</td>
+                    </tr>
+                </table>
+                 
+                
+            </div>
+            <div class="pays container flex">
+                <div class="pay">
+                    <table>
+                        <tr>
+                            <td><b id="pay">Thanh toán</b></td>
+                        </tr>
+                        <tr>
+                            <td>Chiếu khấu</td>
+                            <td class="price">0 VND</td>
+                        </tr>
+                        <tr>
+                            <td>Tổng tiền thanh toán</td>
+                            <td class="price" id="total">55000 VND</td>
+                        </tr>
+                    </table>
+                </div>
+               
+
+                <div class="info-ticket">
+                <h1>Thông tin đặt vé</h1>
+                    <div class="name-email flex">
+                        <input id="name" type="text" placeholder="Tên bạn">
+                        <input id="mail" type="email" placeholder="Địa chỉ email">
+                    </div>
+                    <div class="phone-add flex">
+                            <input id="phone" type="number" placeholder="Số điện thoại">
+                            <input id="from" type="text" placeholder="Địa chỉ">
+                    </div>
+                <h2>Ghi chú</h2>
+                    <div class="note">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Ghi chú"></textarea>
+                    </div>
+                <button onclick="send()" class="js-buy-ticket" id="booking-ticket">Đặt vé<i class="fa-solid fa-check"></i></button>    
+                </div>
+            </div>
+       </div>
+       <footer>
+        <div class="container flex footer">
+             <div class="contact">
+                 <h1>SAIGON CINEMA</h1>
+                 <h4>Tầng 10, Landmark 81 - số 208 Nguyễn Hữu Cảnh, P.22, Q.Bình Thạnh, TP.HCM, VIỆT NAM</h4>
+             </div>
+             <div class="movie2">
+                 <h2>PHIM</h2>
+                 <h3><a href="">Phim sắp chiếu</a></h3>
+                 <h3><a href="Index1.html">Phim đang chiếu</a></h3>
+             </div>
+             <div class="info">
+                 <h2>THÔNG TIN</h2>
+                 <h3><a href="">Về chúng tôi</a></h3>
+                 <h3><a href="">Bài viết</a></h3>
+                 <h3><a href="">Liên hệ</a></h3>
+                 <h3><a href="">Trợ giúp</a></h3>
+             </div>
+             <div class="follow">
+                 <h2>THEO DÕI CHÚNG TÔI</h2>
+                 <div class="contact-icon">
+                     <i class="fa-brands fa-facebook icon-contact"></i>
+                     <i class="fa-brands fa-instagram icon-contact"></i>
+                     <i class="fa-brands fa-twitter icon-contact"></i>
+                     <i class="fa-brands fa-google icon-contact"></i>
+                 </div>
+         </div>
+     </footer>
+     
+     <div class="modal js-modal">
+        <div class="modal-container">
+            <div class="modal-close js-modal-close"><i class='fa fa-close'></i></div>
+            
+            <header class="modal-header">
+                <h1>Thank you !</h1>
+            </header>
+            <div class="infor">
+                <div id="current-time"></div>
+                <div id="orderName"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-items">
+                    <div class="modal-item">
+                        <table class="modal-itemm">
+                            <tr>
+                                <td>Tên phim</td>
+                                <td>Tổng tiền</td>
+                                <td>Ngày chiếu phim</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #ff8e00;">NOPE</td>
+                                <td></td>
+                                <td>11:30 ngày 24/08/2022</td>
+                               
+                            </tr>
+                            <tr>
+                                <td>Phương thức thanh toán</td>
+                                <td>Tại quầy</td>
+                            </tr>
+                            <tr>
+                                <td>Tạm tính</td>
+                                <td id="bill"></td>
+                            </tr>
+                            <tr>
+                                <td>Tổng</td>
+                                <td id="bill2"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright"><p>&copy; 2022 SAIGON CINEMA | All Rights Reserved</p></div>
+    <script src="JS3.js"></script>
+    </body>
+</html>
